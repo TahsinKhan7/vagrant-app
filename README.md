@@ -9,6 +9,7 @@ https://www.vagrantup.com/downloads.html
 Download and install virtual box:
 https://www.virtualbox.org/wiki/Downloads
 
+Clone or download the folder of this repository.
 
 
 Setting up a vagrant virtual environment:
