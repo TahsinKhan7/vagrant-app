@@ -34,19 +34,26 @@ This runs the vagrant file and sets up virtual machine/development environment a
 
 This connects the vagrant virtual machine via ssh.
 
-6) Navigate to the apps folder through the vagrant ssh:
+6) Navigate to the app folder through the vagrant ssh using the commands:
+
+			cd /vagrant
+Then
+
+			cd /app
+			
+7) Next, install npm using:
 
 			install npm
-
 7) Then enter:
 
 			npm start
+To start it (note this may give an error, but step 8 should work).
 
 8) Finally, enter the command:
 
 			pm2 start app.js
 			
-This will allow you to directly run an application on the development.localhost:3000 server.
+This will allow you to directly run the application in the app folder on the development.localhost:3000 server.
 
 
 
