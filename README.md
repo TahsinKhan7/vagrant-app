@@ -19,7 +19,7 @@ Setting up a vagrant virtual environment:
 
 3) Next, enter the following code in the terminal: 
 		
-				vagrant up
+			vagrant up
 
 This runs the vagrant file and sets up virtual machine/development environment and installs essential files stated in the provision file.
 
@@ -27,7 +27,8 @@ This runs the vagrant file and sets up virtual machine/development environment a
 		vagrant plugin install vagrant-hostsupdater 
 
 5) Next, use the command:
-				vagrant ssh
+			vagrant ssh
+
 This connects the vagrant virtual machine via ssh.
 
 6) Navigate to the apps folder within the development environment folder and runt:
