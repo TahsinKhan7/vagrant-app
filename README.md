@@ -1,8 +1,76 @@
 # vagrant-app
 
+This repository contains a folder with contents which can be used to set up a development environment using the software tools vagrant and virtual box.
 
-Complete a README.md that explains how to use the Development Environment. 
-This should include instructions of how to get the environment running and any other 
-instructions of how to work the environment. 
-Think about what you need to do to see the application. 
-Where you need to write the code for it to be seen by the VM. 
+
+Download and install vagrant:
+https://www.vagrantup.com/downloads.html
+
+Download and install virtual box:
+https://www.virtualbox.org/wiki/Downloads
+
+
+
+Setting up a vagrant virtual environment:
+
+1) Open your systems terminal.
+
+2) Navigate to the "DevEnvironments" folder using the terminals cd command.
+
+3) Next, enter the following code in the terminal: 
+		
+				vagrant up
+
+This runs the vagrant file and sets up virtual machine/development environment and installs essential files stated in the provision file.
+
+4) use the following command to ensure you have the latest vagrant host updater plugin:
+		vagrant plugin install vagrant-hostsupdater 
+
+5) Next, use the command:
+				vagrant ssh
+This connects the vagrant virtual machine via ssh.
+
+6) Navigate to the apps folder within the development environment folder and runt:
+
+			install npm
+
+7) Then enter:
+
+			npm start
+
+8) Finally, enter the command:
+
+			pm2 start app.js
+This will allow you to directly run an application on the development.localhost:3000 server.
+
+
+
+
+---Explanation of some of the contents of the folder:
+1) The folder contains a file called "VagrantFile".
+The file contains the following code:
+
+config.vm.box = "ubuntu/xenial64"
+
+--This initialises a vagrant virtual box.
+
+  config.vm.network("private_network", ip: "192.168.10.100")
+  config.hostsupdater.aliases = ["development.local"]
+
+--This sets up a private local server for development use. 
+
+config.vm.synced_folder("app", "/app")
+--This syncs the applications folder that is in development.
+
+2) An environment folder with a file named provision.sh which contains
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get install nginx -y
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install nodejs -y
+sudo npm install -g pm2
+node app.js
+pm2 start app.js
+
+--This code will install various tools which facilitates the development environment.
