@@ -15,7 +15,7 @@ Setting up a vagrant virtual environment:
 
 1) Open your systems terminal.
 
-2) Navigate to the "DevEnvironments" folder using the terminals cd command.
+2) Navigate to the "DevEnviroments" folder using the terminals cd command.
 
 3) Next, enter the following code in the terminal: 
 		
