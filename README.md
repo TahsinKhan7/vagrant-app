@@ -1,4 +1,4 @@
-# vagrant-virtual-enviroment
+# vagrant-virtual-environment
 
 This repository contains a folder with contents which can be used to set up a development environment using the software tools vagrant and virtual box.
 
