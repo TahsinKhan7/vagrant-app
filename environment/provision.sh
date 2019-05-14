@@ -1,7 +1,4 @@
 #!/bin/bash
-
-npm install
-npm start
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install nginx -y
