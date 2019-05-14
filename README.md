@@ -44,12 +44,12 @@ Then
 7) Next, install npm using:
 
 			install npm
-7) Then enter:
+8) Then enter:
 
 			npm start
 To start it (note this may give an error, but step 8 should work).
 
-8) Finally, enter the command:
+9) Finally, enter the command:
 
 			pm2 start app.js
 			
