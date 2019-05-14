@@ -47,7 +47,7 @@ Then
 8) Then enter:
 
 			npm start
-To start it (note this may give an error, but step 8 should work).
+To start it (note this may give an error, but step 9 should work).
 
 9) Finally, enter the command:
 
