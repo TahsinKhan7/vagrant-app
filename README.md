@@ -22,7 +22,7 @@ Setting up a vagrant virtual environment:
 		
 			vagrant up
 
-This runs the vagrant file and sets up virtual machine/development environment and installs essential files stated in the provision file.
+This runs the vagrant file and sets up a virtual machine/development environment and installs essential files stated in the provision file.
 
 4) Use the following command to ensure you have the latest vagrant host updater plugin:
 		
